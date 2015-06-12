@@ -47,7 +47,3 @@ searches on only one instance. Many simultaneous users, through the remote
 interface, could overload a single instance. The NCBI is working on an approach
 that distributes searches to multiple instances.
 Information and links to the latest BLAST AMI are available at the [BLAST Searches at a Cloud Provider](http://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=CloudBlast) web page.
-
-The NCBI welcomes feedback on this experiment at AWS. You may provide feedback using this [form](http://www.ncbi.nlm.nih.gov/sites/ehelp/feedback?Ncbi_App=blastAWS&Data=JiraApp:HD;).
-
-
