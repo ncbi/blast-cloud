@@ -30,10 +30,10 @@ set of databases (see [the FUSE client]({% post_url 2015-06-09-fuse %})).
 
 The BLAST AMI supports three different search methods:
 
-1. Users can ssh into the instance and run stand-alone BLAST at the command-line. 
-2. The instance has a simple webpage for search submission. 
-3. The instance supports a **_subset_** of the NCBI-BLAST URL API interface
-(see [API]({% post_url 2015-06-09-api %})). 
+1. Users can ssh into the instance and [run stand-alone BLAST+ at the
+command-line]({% post_url 2015-06-09-running-blast %}). 
+1. The instance has a [simple webpage for search submission]({% post_url 2015-06-09-running-web-blast %}). 
+1. The instance supports the [NCBI-BLAST Common URL API interface]({% post_url 2015-06-09-api %}). 
 
 The latter two methods are remote searches that return a "Request ID".
 

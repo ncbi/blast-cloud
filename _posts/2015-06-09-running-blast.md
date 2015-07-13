@@ -1,7 +1,7 @@
 ---
 layout: page
 category: doc
-title: "Running BLAST"
+title: "Running BLAST+"
 order: 1
 ---
 Users familiar with command line interfaces can run the [BLAST+
