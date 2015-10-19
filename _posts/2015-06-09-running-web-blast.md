@@ -6,14 +6,13 @@ order: 2
 ---
 To run a search, you should:
 
-1. Launch a BLAST AMI. The security group must allow access through HTTP. If
-possible, restrict the allowed IP's for HTTP so as to include only those of the
-intended users. See [their Getting Started
-Guide](http://docs.amazonwebservices.com/AWSEC2/latest/GettingStartedGuide/)
-for details.
+1. Launch a BLAST instance. The security group must allow access through HTTP.
+   If possible, restrict the allowed IP's for HTTP so as to include only those
+   of the intended users. See your cloud provider's documentation. The examples
+   on this page assume Amazon Web Services (AWS).
 
-1. Once the instance has launched, obtain the Public DNS from the EC2
-Management Console. The Public DNS will look something like:
+1. Once the instance has launched, obtain the Public DNS from your cloud provider.
+For AWS, the Public DNS will look something like:
 `ec2-54-82-43-97.compute-1.amazonaws.com` though the exact numbers and letters
 will be depend upon your instance.
 
