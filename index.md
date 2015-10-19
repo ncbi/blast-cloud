@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "NCBI BLAST AMI Documentation"
+title: "NCBI BLAST Cloud Documentation"
 ---
 
 Basic Local Alignment Search Tool (BLAST) is a popular sequence similarity
@@ -18,17 +18,25 @@ Additionally, some users do not need to perform a large number of searches on a
 regular basis, but may need to do so occasionally. A cloud provider may offer
 an acceptable solution for these batch users.
 
-The NCBI is experimenting with a BLAST+ installation at Amazon Web Services
-(AWS). The NCBI is providing an Amazon Machine Image (AMI) which can be run
-directly and via the [AWS
-Marketplace](https://aws.amazon.com/marketplace/pp/B00N44P7L6). The BLAST AMI
-includes the BLAST+ applications, a "FUSE" client that can cache databases from
-the NCBI (during the first search), a PERL script that mimics a subset of the
-NCBI URL API, and a simplified BLAST search webpage. The instance runs an http
-daemon for the remote BLAST searches. The FUSE client can download a limited
-set of databases (see [the FUSE client]({% post_url 2015-06-09-fuse %})). 
+The NCBI is experimenting with a BLAST+ server image at Amazon Web Services
+(AWS), Google Compute Engine (GCE), and Microsoft Azure.  The BLAST server
+image includes the BLAST+ applications, a "FUSE" client that can cache
+databases from the NCBI (during the first search), a PERL script that mimics a
+subset of the NCBI URL API, and a simplified BLAST search webpage. The instance
+runs an http daemon for the remote BLAST searches. The FUSE client can download
+a limited set of databases (see [the FUSE client]({% post_url 2015-06-09-fuse %})). NCBI does not not charge for use of the software, but any instances will
+incur the cloud provider's charges.
 
-The BLAST AMI supports three different search methods:
+The AWS Amazon Machine Image (AMI) can be run directly via the [AWS
+Marketplace](https://aws.amazon.com/marketplace/pp/B00N44P7L6).
+
+The Google Compute Engine deployment process can be started from the [GCE Cloud
+Launcher](https://console.developers.google.com/project/_/launcher/details/click-to-deploy-images/ncbiblast). 
+
+The Microsoft Azure image can be started from the [Azure
+Marketplace](https://azure.microsoft.com/en-us/marketplace/partners/ncbi/ncbi-free-2-2-31/).
+
+The BLAST server image supports three different search methods:
 
 1. Users can ssh into the instance and [run stand-alone BLAST+ at the
 command-line]({% post_url 2015-06-09-running-blast %}). 
@@ -37,13 +45,15 @@ command-line]({% post_url 2015-06-09-running-blast %}).
 
 The latter two methods are remote searches that return a "Request ID".
 
-The remote search methods allow one user in a group to register at AWS,
-configure the instance, and handle payment for the EC2 instances (NCBI does not
-charge for use). Other
-members of a group can then use the instance through the URL API or webpage
-without their own AWS account. The URL API interface is ideal for users
-familiar with the BLAST URL API at the NCBI. Currently, the BLAST AMI runs
-searches on only one instance. Many simultaneous users, through the remote
-interface, could overload a single instance. The NCBI is working on an approach
-that distributes searches to multiple instances.
-Information and links to the latest BLAST AMI are available at the [BLAST Searches at a Cloud Provider](http://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=CloudBlast) web page.
+The remote search methods allow one user in a group to register at a cloud
+provider, configure the instance, and handle payment for the running
+instance(s). Other members of a group can then use the instance through the URL
+API or webpage without their own cloud provider account. The URL API interface
+is ideal for users familiar with the BLAST URL API at the NCBI. Currently, the
+BLAST server image runs searches on only one instance. Many simultaneous users,
+through the remote interface, could overload a single instance. The NCBI is
+working on an approach that distributes searches to multiple instances.
+Information and links to the latest BLAST AMI are available at the [BLAST
+Searches at a Cloud
+Provider](http://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=CloudBlast)
+web page.
