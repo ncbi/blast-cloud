@@ -41,8 +41,8 @@ GB SSD (causing searches to fail), so for AWS, a larger instance type than
 searched.
 
 If you wish to allow remote searches, then you will need to enable HTTP access
-when you configure your instance (please [Running Web BLAST]({{ site.baseurl }} {% post_url 2015-06-09-running-web-blast %}) and
-[Common URL API]({{ site.baseurl }} {% post_url 2015-06-09-api %})). If you allow HTTP access, it is very important that you
+when you configure your instance (please [Running Web BLAST]({{ site.baseurl }}{% post_url 2015-06-09-running-web-blast %}) and
+[Common URL API]({{ site.baseurl }}{% post_url 2015-06-09-api %})). If you allow HTTP access, it is very important that you
 configure your security group/network firewall properly. If the group is not restricted, anyone
 with knowledge of your public DNS may perform remote searches on your instance,
 see all the BLAST results for remote searches or delete the results. If
