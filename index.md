@@ -24,7 +24,7 @@ image includes the BLAST+ applications, a "FUSE" client that can cache
 databases from the NCBI (during the first search), a PERL script that mimics a
 subset of the NCBI URL API, and a simplified BLAST search webpage. The instance
 runs an http daemon for the remote BLAST searches. The FUSE client can download
-a limited set of databases (see [the FUSE client]({% post_url 2015-06-09-fuse %})). NCBI does not not charge for use of the software, but any instances will
+a limited set of databases (see [the FUSE client]({{ site.baseurl }} {% post_url 2015-06-09-fuse %})). NCBI does not not charge for use of the software, but any instances will
 incur the cloud provider's charges.
 
 The AWS Amazon Machine Image (AMI) can be run directly via the [AWS
@@ -39,9 +39,9 @@ Marketplace](https://azure.microsoft.com/en-us/marketplace/partners/ncbi/ncbi-fr
 The BLAST server image supports three different search methods:
 
 1. Users can ssh into the instance and [run stand-alone BLAST+ at the
-command-line]({% post_url 2015-06-09-running-blast %}). 
-1. The instance has a [simple webpage for search submission]({% post_url 2015-06-09-running-web-blast %}). 
-1. The instance supports the [NCBI-BLAST Common URL API interface]({% post_url 2015-06-09-api %}). 
+command-line]({{ site.baseurl }} {% post_url 2015-06-09-running-blast %}). 
+1. The instance has a [simple webpage for search submission]({{ site.baseurl }}{% post_url 2015-06-09-running-web-blast %}). 
+1. The instance supports the [NCBI-BLAST Common URL API interface]({{ site.baseurl }} {% post_url 2015-06-09-api %}). 
 
 The latter two methods are remote searches that return a "Request ID".
 
