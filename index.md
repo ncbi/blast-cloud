@@ -18,7 +18,7 @@ Additionally, some users do not need to perform a large number of searches on a
 regular basis, but may need to do so occasionally. A cloud provider may offer
 an acceptable solution for these batch users.
 
-The NCBI is experimenting with a BLAST+ server image at Amazon Web Services
+The NCBI is now provides a BLAST+ server image at Amazon Web Services
 (AWS), Google Compute Engine (GCE), and Microsoft Azure.  The BLAST server
 image includes the BLAST+ applications, a "FUSE" client that can cache
 databases from the NCBI (during the first search), a PERL script that mimics a

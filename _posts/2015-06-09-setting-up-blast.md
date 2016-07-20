@@ -40,6 +40,9 @@ GB SSD (causing searches to fail), so for AWS, a larger instance type than
 `m3.large` should be selected if both protein and nucleotide databases will be
 searched.
 
+The instance downloads a database with a [FUSE client]({{ site.baseurl }}{% post_url 2015-06-09-fuse %}) from the NCBI during the first search of that database. This means that the first search will be slow, but afterwards the database will be cached locally and run at normal BLAST speeds.  Since the database is coming from the NCBI, downloads are faster the closer the installation
+is to the NCBI.  For AWS, US-East (N. Virginia) is the closest installation.
+
 If you wish to allow remote searches, then you will need to enable HTTP access
 when you configure your instance (please [Running Web BLAST]({{ site.baseurl }}{% post_url 2015-06-09-running-web-blast %}) and
 [Common URL API]({{ site.baseurl }}{% post_url 2015-06-09-api %})). If you allow HTTP access, it is very important that you

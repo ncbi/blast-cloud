@@ -1,6 +1,6 @@
 # Site title and subtitle. This is used in _includes/header.html
 title: 'NCBI BLAST AMI'
-subtitle: 'An experiment to put BLAST on the cloud'
+subtitle: 'BLAST on the cloud'
 
 # Enable/show navigation. There are there options:
 #   0 - always hide
