@@ -6,7 +6,7 @@ title: "NCBI BLAST Cloud Documentation"
 Basic Local Alignment Search Tool (BLAST) is a popular sequence similarity
 search tool. The National Center for Biotechnology Information (NCBI) maintains
 a public BLAST server at
-[blast.ncbi.nlm.nih.gov](http://blast.ncbi.nlm.nih.gov). The NCBI BLAST server
+[blast.ncbi.nlm.nih.gov](https://blast.ncbi.nlm.nih.gov). The NCBI BLAST server
 is intended mainly for interactive use, with the expectation that users will
 perform a moderate number of searches (i.e., 10-20) per day. Some users have
 many more searches to perform than can be accommodated at the NCBI site. For
@@ -55,5 +55,5 @@ through the remote interface, could overload a single instance. The NCBI is
 working on an approach that distributes searches to multiple instances.
 Information and links to the latest BLAST AMI are available at the [BLAST
 Searches at a Cloud
-Provider](http://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=CloudBlast)
+Provider](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=CloudBlast)
 web page.

@@ -5,7 +5,7 @@ title: "Running BLAST+"
 order: 1
 ---
 Users familiar with command line interfaces can run the [BLAST+
-applications](http://www.ncbi.nlm.nih.gov/books/NBK1763) directly on their 
+applications](https://www.ncbi.nlm.nih.gov/books/NBK1763) directly on their 
 instance by logging on via ssh and issuing commands at the terminal prompt.
 The BLAST server image uses Ubuntu Linux, so you should use the user name `ubuntu`
 rather than `root`, `centos`, `ec2-user`, or your own username for the ssh connection.
