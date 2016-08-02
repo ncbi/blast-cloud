@@ -18,7 +18,7 @@ Additionally, some users do not need to perform a large number of searches on a
 regular basis, but may need to do so occasionally. A cloud provider may offer
 an acceptable solution for these batch users.
 
-The NCBI is now provides a BLAST+ server image at Amazon Web Services
+The NCBI provides a BLAST+ server image at Amazon Web Services
 (AWS), Google Compute Engine (GCE), and Microsoft Azure.  The BLAST server
 image includes the BLAST+ applications, a "FUSE" client that can cache
 databases from the NCBI (during the first search), a PERL script that mimics a
@@ -27,14 +27,14 @@ runs an http daemon for the remote BLAST searches. The FUSE client can download
 a limited set of databases (see [the FUSE client]({{ site.baseurl }}{% post_url 2015-06-09-fuse %})). NCBI does not not charge for use of the software, but any instances will
 incur the cloud provider's charges.
 
-The AWS Amazon Machine Image (AMI) can be run directly via the [AWS
+* The AWS Amazon Machine Image (AMI) can be run directly via the [AWS
 Marketplace](https://aws.amazon.com/marketplace/pp/B00N44P7L6).
-
-The Google Compute Engine deployment process can be started from the [GCE Cloud
-Launcher](https://console.developers.google.com/project/_/launcher/details/click-to-deploy-images/ncbiblast). 
-
-The Microsoft Azure image can be started from the [Azure
-Marketplace](https://azure.microsoft.com/en-us/marketplace/partners/ncbi/ncbi-free-2-2-31/).
+* The Google Compute Engine deployment process can be started from the [GCE Cloud
+Launcher](https://console.developers.google.com/project/_/launcher/details/click-to-deploy-images/ncbiblast);
+documentation can be found
+[here](https://googlegenomics.readthedocs.org/en/latest/use_cases/run_familiar_tools/ncbiblast.html).
+* The Microsoft Azure image can be started from the [Azure
+Marketplace](https://azure.microsoft.com/en-us/marketplace/virtual-machines/all/?term=ncbi-blast).
 
 The BLAST server image supports three different search methods:
 
