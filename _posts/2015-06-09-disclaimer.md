@@ -14,4 +14,7 @@ It is possible that searches at an AWS instance could produce different results 
 
 A running instance will download BLAST databases from the NCBI.  The instance will normally place minimal demands on the NCBI website since the database is cached after the first download.  Use of an instance in a manner that places heavy demands on the NCBI site may result in the instance being blocked.
 
-The BLAST results and databases are kept on ephemeral storage at AWS.  User error (e.g., premature stopping or termination of an instance) could result in loss of data.  Problems at AWS or with NCBI software could also result in the loss of data. 
+The BLAST results and databases are kept on ephemeral storage at AWS.  User
+error (e.g.: premature stopping or termination of an instance) could result in
+loss of data. Problems at AWS or with NCBI software could also result in the
+loss of data. 
