@@ -19,7 +19,7 @@ regular basis, but may need to do so occasionally. A cloud provider may offer
 an acceptable solution for these batch users.
 
 The NCBI provides a BLAST+ server image at Amazon Web Services
-(AWS), Google Compute Engine (GCE), and Microsoft Azure.  The BLAST server
+(AWS) and Google Compute Engine (GCE).  The BLAST server
 image includes the BLAST+ applications, a "FUSE" client that can cache
 databases from the NCBI (during the first search), a PERL script that mimics a
 subset of the NCBI URL API, and a simplified BLAST search webpage. The instance
@@ -33,8 +33,6 @@ Marketplace](https://aws.amazon.com/marketplace/pp/B00N44P7L6).
 Launcher](https://console.developers.google.com/project/_/launcher/details/click-to-deploy-images/ncbiblast);
 documentation can be found
 [here](https://googlegenomics.readthedocs.org/en/latest/use_cases/run_familiar_tools/ncbiblast.html).
-* The Microsoft Azure image can be started from the [Azure
-Marketplace](https://azure.microsoft.com/en-us/marketplace/virtual-machines/all/?term=ncbi-blast).
 
 The BLAST server image supports three different search methods:
 
