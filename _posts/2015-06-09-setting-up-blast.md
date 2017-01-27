@@ -4,7 +4,8 @@ category: doc
 title: "Setting up BLAST"
 order: 0
 ---
-An account is required with one of the following cloud providers: Amazon Web Services (AWS), Google Compute Engine (GCE), or Microsoft Azure. As cloud providers rapidly change their product offerings, please consult their cloud documentation first.
+An account is required with one of the following cloud providers: Amazon Web
+Services (AWS) or Google Compute Engine (GCE). As cloud providers rapidly change their product offerings, please consult their cloud documentation first.
 
 NCBI does not charge for the use of our software but you will be billed by the
 cloud provider. All costs associated with running the BLAST+ software in a
@@ -24,8 +25,6 @@ The AWS server image can be started via the [AWS marketplace](https://aws.amazon
 
 The GCE server image is a 'click-to-deploy' option and can be found at [Click-to-Deploy](https://console.developers.google.com/project/_/launcher/details/click-to-deploy-images/ncbiblast). 
 
-The Azure server image can be found at the [Azure Marketplace](https://azure.microsoft.com/en-us/marketplace/partners/ncbi/ncbi-free-2-2-31/).
-
 BLAST searches will not run efficiently on smaller instances. Minimally, as of
 January 25, 2017, **an instance with 32 GB of memory and at least 200 GB of
 disk space is required.** Please see your cloud provider for a list of suitable
@@ -34,8 +33,7 @@ instances.
 The server image is designed to use a local "scratch" disk to speed up the
 BLAST database. For AWS, you need to ensure that your instance has 'instance
 storage' and that it is attached. Google Compute Engine also requires attaching
-a local, "scratch", SSD at boot. All Azure instances start with one local
-"scratch" drive by default.
+a local, "scratch", SSD at boot.
 
 The instance downloads a database with a [FUSE client]({{ site.baseurl }}{% post_url 2015-06-09-fuse %}) from the NCBI during the first search of that database. This means that the first search will be slow, but afterwards the database will be cached locally and run at normal BLAST speeds.  Since the database is coming from the NCBI, downloads are faster the closer the installation
 is to the NCBI.  For AWS, US-East (N. Virginia) is the closest installation.
