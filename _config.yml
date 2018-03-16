@@ -27,7 +27,7 @@ baseurl: '/blast-cloud'
 # Dates are not included in permalinks
 permalink: none
 
-# Syntax highlighting
+markdown: kramdown
 highlighter: rouge
 
 # Since these are pages, it doesn't really matter
@@ -35,5 +35,3 @@ future: true
 
 # Exclude non-site files
 exclude: ['bin', 'README.md']
-
-markdown: kramdown
