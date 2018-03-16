@@ -37,11 +37,15 @@ writing (03/15/2018) is 54 GB and the size of `nr` is 154 GB.
 Please be sure to provision an instance with enough RAM and disk space for the BLAST
 database(s) you will be using.
 
-The instance downloads a database with a [FUSE client]({{ site.baseurl }}{% post_url 2015-06-09-fuse %}) 
-from the NCBI during the first search of that database. This means that the first search will be slow, 
-but afterwards the database will be cached locally and run at normal BLAST speeds. 
-Since the database is coming from the NCBI, downloads are faster the closer the installation
-is to the NCBI. For AWS, US-East (N. Virginia) is the closest installation.
+The instance downloads BLAST databases with a [FUSE client]({{ site.baseurl }}{% post_url 2015-06-09-fuse %}) 
+from the NCBI during the first search of that database. This means that the
+first BLAST search will be slow, but afterwards the database will be cached locally
+and BLAST will run faster.
+
+**NOTE**: Since the database is coming from the NCBI, downloads are faster if the
+instance runs in a data center that is geographically close to NCBI.
+For AWS, US-East (N. Virginia) is the closest data center, so for optimal performance, please consider
+starting your instance in that data center.
 
 ### Setting up remote access
 
