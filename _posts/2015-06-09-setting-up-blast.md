@@ -4,8 +4,8 @@ category: doc
 title: "Setting up BLAST"
 order: 0
 ---
-An account is required with one of the following cloud providers: Amazon Web
-Services (AWS) or Google Compute Engine (GCE). As cloud providers rapidly change their product offerings, please consult their cloud documentation first.
+An account is required with Amazon Web
+Services (AWS). As cloud providers rapidly change their product offerings, please consult their cloud documentation first.
 
 NCBI does not charge for the use of our software but you will be billed by the
 cloud provider. All costs associated with running the BLAST+ software in a
@@ -15,34 +15,43 @@ to avoid unexpectedly large charges, NCBI suggests that you use these services.
 
 For AWS, please see the [EC2 documentation](http://docs.amazonwebservices.com/AWSEC2/latest/GettingStartedGuide/) [at AWS](http://aws.amazon.com/getting-started/) and their [pricing information](https://aws.amazon.com/ec2/pricing/). AWS also provides a [Command Line Interface](https://aws.amazon.com/cli/). 
 
-For GCE, complete documentation can be found at [Google](https://cloud.google.com/compute/docs/), the server image is distributed as a "click-to-deploy" option. Additional information can be found with [Google Genomics](http://googlegenomics.readthedocs.org/en/latest/use_cases/run_familiar_tools/ncbiblast.html).
-
 The AWS server image can be started via the [AWS marketplace](https://aws.amazon.com/marketplace/pp/B00N44P7L6).
 
-The GCE server image is a 'click-to-deploy' option and can be found at [Click-to-Deploy](https://console.developers.google.com/project/_/launcher/details/click-to-deploy-images/ncbiblast). 
+### BLAST performance
 
-BLAST searches will not run efficiently on smaller instances. Minimally, an
-instance with 32 GB of memory and a minimum of 32 GiB free space is required.
-Please see your cloud provider for a list of suitable instances.
+BLAST performs best when the BLAST database's sequence data can fit into RAM, so BLAST
+searches will not run efficiently on smaller instances. Please see your cloud
+provider for a list of suitable instances.
+
+### BLAST database storage
 
 The server image is designed to use a local "scratch" disk to speed up the
 BLAST database. For AWS, you need to ensure that your instance has 'instance
-storage' and that it is attached. Google Compute Engine also requires attaching
-a local, "scratch", SSD at boot.
+storage' and that it is attached.
 
-The nucleotide nt database contains about 56 billion bases (04/14/2014), but
-the sequence data is compressed 4-to-1. Hence, the sequences require about 14
-GB. The protein nr database contains about 14 billion residues (04/14/2014), so
-the sequences require 14 GB. The nr and nt databases will completely fill a 32
-GB SSD (causing searches to fail), so for AWS, a larger instance type than
-`m3.large` should be selected if both protein and nucleotide databases will be
-searched.
+The nucleotide `nt` database contains about 174 billion bases, but
+the sequence data is compressed 4-to-1. Hence, the sequences require about 42
+GB. The protein `nr` database contains about 54 billion residues, so
+the sequences require 51 GB. The *total* size of the `nt` database as of this 
+writing (03/15/2018) is 54 GB and the size of `nr` is 154 GB.
+Please be sure to provision an instance with enough RAM and disk space for the BLAST
+database(s) you will be using.
 
-The instance downloads a database with a [FUSE client]({{ site.baseurl }}{% post_url 2015-06-09-fuse %}) from the NCBI during the first search of that database. This means that the first search will be slow, but afterwards the database will be cached locally and run at normal BLAST speeds.  Since the database is coming from the NCBI, downloads are faster the closer the installation
-is to the NCBI.  For AWS, US-East (N. Virginia) is the closest installation.
+The instance downloads BLAST databases with a [FUSE client]({{ site.baseurl }}{% post_url 2015-06-09-fuse %}) 
+from the NCBI during the first search of that database. This means that the
+first BLAST search will be slow, but afterwards the database will be cached locally
+and BLAST will run faster.
+
+**NOTE**: Since the database is coming from the NCBI, downloads are faster if the
+instance runs in a data center that is geographically close to NCBI.
+For AWS, US-East (N. Virginia) is the closest data center, so for optimal performance, please consider
+starting your instance in that data center.
+
+### Setting up remote access
 
 If you wish to allow remote searches, then you will need to enable HTTP access
-when you configure your instance (please [Running Web BLAST]({{ site.baseurl }}{% post_url 2015-06-09-running-web-blast %}) and
+when you configure your instance *and* provide [authentication]({{ site.baseurl }}{% post_url 2015-06-09-authentication %})
+(please see [Running Web BLAST]({{ site.baseurl }}{% post_url 2015-06-09-running-web-blast %}) and
 [Common URL API]({{ site.baseurl }}{% post_url 2015-06-09-api %})). If you allow HTTP access, it is very important that you
 configure your security group/network firewall properly. If the group is not restricted, anyone
 with knowledge of your public DNS may perform remote searches on your instance,
