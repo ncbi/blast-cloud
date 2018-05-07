@@ -18,6 +18,3 @@ also only share the public DNS of your instance with people who have your
 permission to use it.
 
 As a security precaution, the BLAST AMI blocks all ports but 22 and 80.
-The BLAST results are kept on ephemeral storage. They will disappear when the
-instance is stopped or terminated. If you wish to keep them, then you should
-move them to permanent storage at your cloud provider or your institution.

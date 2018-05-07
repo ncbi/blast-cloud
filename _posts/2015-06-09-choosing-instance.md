@@ -7,7 +7,7 @@ order: 8
 
 ### BLAST performance
 
-BLAST performs best when the BLAST database's sequence data can fit into RAM, so BLAST
+BLAST performs best when the BLAST database's sequence data can fit into RAM (see section below), so BLAST
 searches will not run efficiently on smaller instances. Please see your cloud
 provider for a list of suitable instances.
 
@@ -30,7 +30,9 @@ from the NCBI during the first search of that database. This means that the
 first BLAST search will be slow, but afterwards the database will be cached locally
 and BLAST will run faster.
 
-**NOTE**: Since the database is coming from the NCBI, downloads are faster if the
+### Instance data center
+
+Since the database is coming from the NCBI, downloads are faster if the
 instance runs in a data center that is geographically close to NCBI.
 For AWS, US-East (N. Virginia) is the closest data center, so for optimal performance, please consider
 starting your instance in that data center.

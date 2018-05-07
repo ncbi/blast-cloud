@@ -22,8 +22,7 @@ An account is required with Amazon Web Services (AWS). As cloud providers rapidl
 5. Single click launch via yellow button (see area with a red circle in screenshot below). Machine type can be changed using the area highlighted in green (see 2nd screenshot below and adjusted hourly price).
 ![Single Click launch](../images/aws-mktplace-launch-single-click.png "Single Click launch")
 ![single click non default](../images/aws-marketplace-non-default-machine-type.png "Single Click non default")
-
-:warning: If end user wants to login to the machine via ssh, please be sure to set the proper Key Pair to enable access. If this is not needed, no worries, you can still access the web application via the web browser.
+*NOTE*: :warning: If end user wants to login to the machine via ssh, please be sure to set the proper Key Pair to enable access. If this is not needed, no worries, you can still access the web application via the web browser.
 
 6. A confirmation page will follow, to get the URL of your instance, follow the "Console" link (highlighted below). This is also accessible via https://console.aws.amazon.com/ec2/ .
 ![Marketplace confirmation](../images/aws-marketplace-confirmation.png "Marketplace confirmation")
@@ -32,8 +31,8 @@ An account is required with Amazon Web Services (AWS). As cloud providers rapidl
 ![console running instances](../images/aws-console-running-instances.png "console running instances")
 
 8. Identify your running instance. One way of achieving this is as follows:
-  1. Sort the instances by descending launch time (newest first); as it is likely that yours will be at/near the top.
-  1. Copy the public DNS for the machine _and the instance ID.
+ * Sort the instances by descending launch time (newest first); as it is likely that yours will be at/near the top.
+ * Copy the public DNS for the machine _and_ the instance ID.
 ![console public dns](../images/ec2-console-public-dns.png "console public dns")
 
 9. Paste the public DNS into your web browser.

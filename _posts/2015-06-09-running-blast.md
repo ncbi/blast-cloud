@@ -2,11 +2,12 @@
 layout: page
 category: doc
 title: "Running BLAST+"
-order: 1
+order: 3
 ---
 Users familiar with command line interfaces can run the [BLAST+
 applications](https://www.ncbi.nlm.nih.gov/books/NBK1763) directly on their 
-instance by logging on via ssh and issuing commands at the terminal prompt.
+instance by logging on via ssh (requires [setting up remote access]({{site.baseurl}}{% post_url 2015-06-09-setting-up-remote-access %}))
+and issuing commands at the terminal prompt.
 The BLAST server image uses Ubuntu Linux, so you should use the user name `ubuntu`
 rather than `root`, `centos`, `ec2-user`, or your own username for the ssh connection.
 
@@ -17,6 +18,7 @@ manually download other databases from the NCBI FTP site using the
 
     cd /blast/blastdb_custom
     update_blastdb.pl --decompress --passive <dbname>
+    # Can also scp and install custom BLAST databases in this directory
 
 These (and any other) BLAST databases installed in the `/blast/blastdb_custom`
 directory in the instance will be immediately available for searching via the
