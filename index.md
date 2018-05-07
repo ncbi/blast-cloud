@@ -43,16 +43,3 @@ command-line]({{ site.baseurl }}{% post_url 2015-06-09-running-blast %}).
 1. The instance supports the [NCBI-BLAST Common URL API interface]({{ site.baseurl }}{% post_url 2015-06-09-api %}). 
 
 The latter two methods are remote searches that return a "Request ID" and **require** [authentication]({{ site.baseurl }}{% post_url 2015-06-09-authentication %}).
-
-The remote search methods allow one user in a group to register at a cloud
-provider, configure the instance, and handle payment for the running
-instance(s). Other members of a group can then use the instance through the URL
-API or webpage without their own cloud provider account. The URL API interface
-is ideal for users familiar with the BLAST URL API at the NCBI. Currently, the
-BLAST server image runs searches on only one instance. Many simultaneous users,
-through the remote interface, could overload a single instance. The NCBI is
-working on an approach that distributes searches to multiple instances.
-Information and links to the latest BLAST AMI are available at the [BLAST
-Searches at a Cloud
-Provider](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=CloudBlast)
-web page.
