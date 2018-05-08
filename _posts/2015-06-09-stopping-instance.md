@@ -13,12 +13,13 @@ order: 1
 
 1. Login to the [AWS console](https://console.aws.amazon.com/ec2).
 
-2. Identify the instance to stop/terminate (tip: use the instance ID as a means to filter the listing of running instances).
+2. Identify the instance you would like stop **OR** terminate (tip: use the instance ID as a means to filter the listing of running instances).
 ![EC2 filter by IID](../images/ec2-filter-by-iid.png "EC2 filter by IID")
 
-3. Click on "Actions -> Instance State -> Stop" or "Actions -> Instance State -> Terminate".
+3. Click on 'Actions -> Instance State -> Stop' **OR** 'Actions -> Instance State -> Terminate'.
 ![EC stop terminate](../images/ec2-stop-terminate.png "EC stop terminate")
 
-4. Confirm the termination or stoppage.
-![EC stop confirm](../images/ec2-stop-confirm.png "EC stop confirm")
-![EC termination confirm](../images/ec2-termination-confirm.png "EC termination confirm")
+4. Confirm the Stop (4a) **OR** termination(4b).
+![4a](../images/ec2-stop-confirm.png "4a")4a
+![4b](../images/ec2-termination-confirm.png "4b")4b
+
