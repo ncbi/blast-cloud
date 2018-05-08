@@ -36,6 +36,6 @@ Please see the table below for specific examples:
 ##### Foot notes
 
 1. The 1-Click-Launch options is configured by default to start a large enough instance to run searches against the nr and nt BLAST databases and store the results in the instance's local disk.
-2. For those users with proprietary sequence data, you can convert that sequence data into BLAST databases and upload the resulting BLAST databases to a running instance (see last paragraph here). 
+2. For those users with proprietary sequence data, you can convert that sequence data into BLAST databases and [upload the resulting BLAST databases to a running instance]({{site.baseurl}}{% post_url 2015-06-09-updating-blastdbs %}).
 3. Please be sure to [choose an appropriately sized instance]({{site.baseurl}}{% post_url 2015-06-09-choosing-instance %}) for your workload.
 4. Please see [setting up remote access]({{site.baseurl}}{% post_url 2015-06-09-setting-up-remote-access %}).
