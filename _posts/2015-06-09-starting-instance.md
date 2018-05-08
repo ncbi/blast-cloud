@@ -1,8 +1,8 @@
 ---
 layout: page
-category: doc
+category: usage
 title: "Starting an instance"
-order: 2
+order: 0
 ---
 
 An account is required with Amazon Web Services (AWS). As cloud providers rapidly change their product offerings, please consult their cloud documentation first.
@@ -22,9 +22,9 @@ An account is required with Amazon Web Services (AWS). As cloud providers rapidl
 5. Single click launch via yellow button (see area with a red circle in screenshot below). Machine type can be changed using the area highlighted in green (see 2nd screenshot below and adjusted hourly price).
 ![Single Click launch](../images/aws-mktplace-launch-single-click.png "Single Click launch")
 ![single click non default](../images/aws-marketplace-non-default-machine-type.png "Single Click non default")
-*NOTE*: :warning: If end user wants to login to the machine via ssh, please be sure to set the proper Key Pair to enable access. If this is not needed, no worries, you can still access the web application via the web browser.
+**NOTE**: If you want to login to the machine via ssh, please be sure to set the proper Key Pair and open the required ports to enable access. If this is not needed, no worries, you can still access the web application via the web browser.
 
-6. A confirmation page will follow, to get the URL of your instance, follow the "Console" link (highlighted below). This is also accessible via https://console.aws.amazon.com/ec2/ .
+6. A confirmation page will follow, to get the URL of your instance, follow the "Console" link (highlighted below). This is also accessible via the [AWS console](https://console.aws.amazon.com/ec2/).
 ![Marketplace confirmation](../images/aws-marketplace-confirmation.png "Marketplace confirmation")
 
 7. In the AWS console, follow the link to "Running Instances".
@@ -41,7 +41,7 @@ An account is required with Amazon Web Services (AWS). As cloud providers rapidl
 10. Click on "BLAST QUERY" and in the "Sign in" window enter the user name 'blast' and for password use the instance ID from the previous step:
 ![AMI authentication Sign in](../images/ec2-ami-authenticate.png "AMI authentication Sign in")
 
-11. Run BLAST to your heart's content :smiley:
+11. Run BLAST to your heart's content :)
 ![AMI home page](../images/ami-home-page.png "AMI home page")
 
 

@@ -1,8 +1,8 @@
 ---
 layout: page
-category: doc
+category: usage
 title: "Web server authentication"
-order: 4
+order: 3
 ---
 
 In order to access [a running instance via a web browser]({{ site.baseurl }}{% post_url 2015-06-09-running-web-blast %}) 

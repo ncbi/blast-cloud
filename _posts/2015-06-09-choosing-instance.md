@@ -1,8 +1,8 @@
 ---
 layout: page
-category: doc
+category: conf
 title: "Choosing an instance"
-order: 8
+order: 0
 ---
 
 ### BLAST performance
@@ -30,9 +30,9 @@ from the NCBI during the first search of that database. This means that the
 first BLAST search will be slow, but afterwards the database will be cached locally
 and BLAST will run faster.
 
-### Instance data center
+### In which region should I run my instance?
 
-Since the database is coming from the NCBI, downloads are faster if the
+Since the [BLAST databases]({{site.baseurl}}{% post_url 2015-06-09-available-blastdbs %}) are coming from the NCBI, downloads are faster if the
 instance runs in a data center that is geographically close to NCBI.
 For AWS, US-East (N. Virginia) is the closest data center, so for optimal performance, please consider
 starting your instance in that data center.

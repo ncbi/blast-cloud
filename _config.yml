@@ -14,8 +14,9 @@ codeurl: 'https://aws.amazon.com/marketplace/pp/B00N44P7L6'
 # Default categories (in order) to appear in the navigation
 sections: [
     ['doc', 'Documentation'],
-    ['tut', 'Tutorial'],
-    ['ref', 'Reference'],
+    ['usage', 'Usage'],
+    ['conf', 'Configuration'],
+    ['blastdb', 'BLAST databases'],
     ['dev', 'Developers'],
     ['post', 'Posts']
 ]
