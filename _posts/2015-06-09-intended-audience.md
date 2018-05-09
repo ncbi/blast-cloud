@@ -27,9 +27,9 @@ could overload a single instance, to avoid this [monitor your instance](https://
 
 Please see the table below for specific examples:
 
-| Task/workflow | 1-click-start | Knowledge of ssh/scp/networking| Optimal AWS region| Programmatic access via [Common URL API]({{site.baseurl}}{% post_url 2015-06-09-api %})|
+| Task/workflow | 1-click-start | Knowledge of ssh/scp/networking| Optimal data center region| Programmatic access via [Common URL API]({{site.baseurl}}{% post_url 2015-06-09-api %})|
 |---------------|---------------|---------------------------------|------------------------|--------------------|
-|BLAST against protein nr, swissprot, <br>refseq_protein, pdbaa, or <br>nucleotide nt, pdbnt, refseq_rna via web interface|Yes (1) |Limited (4)| us-east-1 (Northern VA)| Not applicable|
+|BLAST against protein nr, swissprot, <br>refseq_protein, pdbaa, or <br>nucleotide nt, pdbnt, refseq_rna via web interface|Yes (1) |Limited (4)| us-east-1 (N. Virginia)| Not applicable|
 |BLAST your own/propietary sequence data (2,3) |Limited options|Required (4)|Closest to where your data is *stored*|Optional|
 |Third party application developers to run BLAST (3)|Limited options|Required (4)|Depends on user's workflow (see two rows above)|Likely required|
 

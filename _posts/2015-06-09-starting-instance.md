@@ -22,7 +22,7 @@ An account is required with Amazon Web Services (AWS). As cloud providers rapidl
 5. Select **'Launch with 1-click'** yellow button (circled in red, see 5a below). Machine type can be changed using the area highlighted in green (see 5b below and adjusted hourly price).
 ![5a](../images/aws-mktplace-launch-single-click.png "5a")5a
 ![5b](../images/aws-marketplace-non-default-machine-type.png "5b")5b<br>
-**NOTE**: If you want to login to the machine via ssh, please be sure to set the proper Key Pair and open the required ports to enable access. If this is not needed, no worries! You can still access the web application via the web browser.
+**NOTE**: If you want to [login to the instance via ssh]({{site.baseurl}}{% post_url 2015-06-09-logging-in %}), please be sure to set the proper Key Pair and open the required ports to enable access. If this is not needed, no worries! You can still access the web application via the web browser.
 
 6. A confirmation page will appear. To get the URL of your instance, follow the "Console" link (highlighted in red below). This is also accessible via the [AWS console](https://console.aws.amazon.com/ec2/).
 ![Marketplace confirmation](../images/aws-marketplace-confirmation.png "Marketplace confirmation")

@@ -2,7 +2,7 @@
 layout: page
 category: usage
 title: "Running Web BLAST"
-order: 4
+order: 3
 ---
 This page describes how to use the [NCBI-BLAST Common URL API]({{ site.baseurl }}{% post_url 2015-06-09-api %}) to run remote BLAST searches.  These instructions assume you are running searches at a cloud provider, but minor modifications
 allow you to run searches at the NCBI web server.  A note at the bottom of this page provides information on searches at the NCBI.
