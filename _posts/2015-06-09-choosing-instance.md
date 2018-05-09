@@ -9,7 +9,7 @@ order: 0
 
 BLAST performs best when the BLAST database's sequence data can fit into RAM (see section below), so BLAST
 searches will not run efficiently on smaller instances. Please see your cloud
-provider for a list of suitable instances.
+provider for a [list of suitable instances](https://aws.amazon.com/ec2/instance-types/).
 
 ### BLAST database storage
 
