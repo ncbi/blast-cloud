@@ -1,8 +1,8 @@
 ---
 layout: page
-category: doc
+category: intro
 title: "Intended Audience"
-order: 0
+order: 1
 ---
 
 The NCBI BLAST AMI will be useful to a variety of users. The requirements for
