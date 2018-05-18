@@ -17,6 +17,10 @@ The server image is designed to use a local "scratch" disk to speed up the
 BLAST database. For AWS, you need to ensure that your instance has 'instance
 storage' and that it is attached.
 
+**NOTE**: If you intend to stop and re-start an instance, please choose an AWS
+instance type that has EBS as its storage. If SSDs are used, their contents will be 
+lost after the instance is rebooted or restarted.
+
 The nucleotide `nt` database contains about 174 billion bases, but
 the sequence data is compressed 4-to-1. Hence, the sequences require about 42
 GB. The protein `nr` database contains about 54 billion residues, so
