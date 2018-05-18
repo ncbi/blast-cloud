@@ -6,8 +6,8 @@ order: 0
 ---
 
 **NOTE**: If you intend to stop and re-start an instance, please choose an AWS
-instance type that has EBS as its storage. If SSDs are used, their contents will be 
-lost after the instance is rebooted or restarted.
+instance type that has EBS as its storage. If SSDs are used, their contents (i.e.: any BLAST results and custom BLAST databases) 
+will be lost after the instance is rebooted or restarted.
 If EBS storage is used, by default the BLAST AMI starts up with a 300GB EBS drive.
 
 ### BLAST performance
