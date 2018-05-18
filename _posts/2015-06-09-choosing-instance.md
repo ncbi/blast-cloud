@@ -5,6 +5,10 @@ title: "How to choose an instance?"
 order: 0
 ---
 
+**NOTE**: If you intend to stop and re-start an instance, please choose an AWS
+instance type that has EBS as its storage. If SSDs are used, their contents will be 
+lost after the instance is rebooted or restarted.
+
 ### BLAST performance
 
 BLAST performs best when the BLAST database's sequence data can fit into RAM (see section below), so BLAST
@@ -16,10 +20,6 @@ provider for a [list of suitable instances](https://aws.amazon.com/ec2/instance-
 The server image is designed to use a local "scratch" disk to speed up the
 BLAST database. For AWS, you need to ensure that your instance has 'instance
 storage' and that it is attached.
-
-**NOTE**: If you intend to stop and re-start an instance, please choose an AWS
-instance type that has EBS as its storage. If SSDs are used, their contents will be 
-lost after the instance is rebooted or restarted.
 
 The nucleotide `nt` database contains about 174 billion bases, but
 the sequence data is compressed 4-to-1. Hence, the sequences require about 42
