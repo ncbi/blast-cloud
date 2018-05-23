@@ -9,11 +9,11 @@ order: 1
 
 **NOTE 2**: Stopping an instance will **delete** any of the [available BLAST databases]({{site.baseurl}}{% post_url 2015-06-09-available-blastdbs %}) that were already downloaded. When the instance is re-started, the [BLAST databases]({{site.baseurl}}{% post_url 2015-06-09-available-blastdbs %}) will be downloaded on demand.
 
-1. Login to the [AWS console](https://console.aws.amazon.com/ec2).
 **NOTE 3**: _Termination_ of instance is permanent, all data stored in the instance is lost forever.<br>
 
 **WARNING**: You may want to download your BLAST results before **terminating** the instance, as once this is done, all the contents of the instance will be lost.
 
+1. Login to the [AWS console](https://console.aws.amazon.com/ec2).
 
 2. Identify the instance you would like stop **OR** terminate (tip: use the instance ID as a means to filter the listing of running instances).
 ![EC2 filter by IID](../images/ec2-filter-by-iid.png "EC2 filter by IID")
