@@ -13,7 +13,7 @@ An account is required with Amazon Web Services (AWS). As cloud providers rapidl
 2. Click on the [AWS marketplace link](https://aws.amazon.com/marketplace/pp/B00N44P7L6).
 ![BLAST AMI link](../images/blast-home-mktplace-link.png "BLAST AMI link")
 
-3. Click on **'Continue to Subscribe'**.
+3. Click on **'Continue to Subscribe'**. (What does it mean to [subscribe](https://aws.amazon.com/marketplace/help/200799470)?)
 ![BLAST AMI Marketplace](../images/aws-mktplace-ami-page.png "BLAST AMI Marketplace")
 
 4. Login with your AWS credentials (requires sign up and credit card information).
