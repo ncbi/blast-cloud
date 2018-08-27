@@ -21,6 +21,7 @@ An account is required with Amazon Web Services (AWS). As cloud providers rapidl
 
 5. Select **'Launch with 1-click'** yellow button (circled in red, see 5a below). <br>
 The 1-Click-Launch option is configured by default to start a `m4.10xlarge` instance (40 vCPUs, 160 GB RAM, EBS volumes, $2/hr), which is large enough (as of 06/08/2018) to run searches against the nr and nt BLAST databases and store the results in the instance's local disk. <br>
+FIXME: need to mention that alternate screens may show up, and show them.
 Recommendations:<br>
 * Use an instance with EBS volumes if you intend to stop or reboot the instance.
 * Start the instance in the `us-east-1` region, as it is closest to NCBI and the BLAST database downloads will be the fastest.
