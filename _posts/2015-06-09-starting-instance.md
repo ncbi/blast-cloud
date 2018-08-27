@@ -21,12 +21,12 @@ An account is required with Amazon Web Services (AWS). As cloud providers rapidl
 
 5. Select **'Launch with 1-click'** yellow button (circled in red, see 5a below). <br>
 The 1-Click-Launch option is configured by default to start a `m4.10xlarge` instance (40 vCPUs, 160 GB RAM, EBS volumes, $2/hr), which is large enough (as of 06/08/2018) to run searches against the nr and nt BLAST databases and store the results in the instance's local disk. <br>
-FIXME: need to mention that alternate screens may show up, and show them.
+**NOTE**: The following two screenshots may not reflect the most recent web interface for the AWS Marketplace.<br>
 Recommendations:<br>
-* Use an instance with EBS volumes if you intend to stop or reboot the instance.
+* Please use an instance with EBS volumes if you intend to stop or reboot the instance.
 * Start the instance in the `us-east-1` region, as it is closest to NCBI and the BLAST database downloads will be the fastest.
+![5a](../images/aws-mktplace-launch-single-click.png "5a")5a<br>
 Machine type can be changed using the area highlighted in green (see 5b below and adjusted hourly price).
-![5a](../images/aws-mktplace-launch-single-click.png "5a")5a
 ![5b](../images/aws-marketplace-non-default-machine-type.png "5b")5b<br>
 **NOTE**: If you want to [login to the instance via ssh]({{site.baseurl}}{% post_url 2015-06-09-logging-in %}), please be sure to set the proper Key Pair and open the required ports to enable access. If this is not needed, no worries! You can still access the web application via the web browser.
 
