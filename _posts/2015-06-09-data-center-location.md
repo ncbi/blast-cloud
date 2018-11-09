@@ -6,7 +6,7 @@ order: 2
 ---
 
 Since the [BLAST databases]({{site.baseurl}}{% post_url 2015-06-09-available-blastdbs %}) are fetched from the NCBI, downloads are faster if the
-instance runs in a region that is geographically close to NCBI.
+instance runs in a region that is geographically close to NCBI. NCBI is located in the east coast of North America.
 
 For AWS, `us-east-1` (N. Virginia) is the closest region, so for optimal download performance, please consider
 starting your instance in that region. You can find a list of available AWS regions [here](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html).
