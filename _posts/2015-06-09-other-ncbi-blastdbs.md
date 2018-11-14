@@ -22,7 +22,6 @@ The table below shows some of the available BLAST databases via this method (sub
 |landmark      |The [landmark database](https://blast.ncbi.nlm.nih.gov/smartblast/smartBlast.cgi?CMD=Web&PAGE_TYPE=BlastDocs) includes proteomes from 27 genomes spanning a wide taxonomic range  |Protein|
 |human_genomic|Assembled human chromosomes from Reference and Genbank for various individuals, along with their scaffold components.|DNA|
 |refseqgene|Genomic sequences for selected genes records from NCBI RefSeq project (NG accessioned), containing additional up- and downstream sequences beyond the transcribed region.|DNA|
-|refseq_genomic|All genomic sequences from NCBI RefSeq project, including wgs scaffolds.|DNA|
 |vector|A database contains common vector sequences found in the GenBank/EMBL/DDBJ.|DNA|
 |pataa|Protein sequences from patents as supplied by USPTO. Its entries are EXCLUDED from the nr database.|Protein|
 |patnt|The patent nucleotide sequence database contains entries from USPTO through GenBank or from EU/Japan Patent Agencies through EMBL/DDBJ. Entries are EXCLUDED from the nt database.|DNA|
