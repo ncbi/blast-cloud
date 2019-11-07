@@ -9,7 +9,7 @@ The following BLAST databases are available in Google Cloud Storage (GCS) (data 
 
 If working on GCP, you can get these BLASTDBs following these instructions:
 * if you have BLAST+ installed, see [Get NCBI BLAST databases](https://www.ncbi.nlm.nih.gov/books/NBK537770/) in the BLAST+ user manual.
-* Otherwise, if you have docker, follow [these instructions](https://github.com/ncbi/blast_plus_docs#show-blast-databases-available-for-download-from-the-google-cloud-bucket)
+* Otherwise, if you have docker, follow [these instructions](https://github.com/ncbi/blast_plus_docs#show-blast-databases-available-for-download-from-the-google-cloud-bucket).
 
 |Name    |Title                |Size (GB)|Last updated|
 |--------|---------------------|---------|------------|
