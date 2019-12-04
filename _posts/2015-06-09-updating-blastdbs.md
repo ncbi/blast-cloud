@@ -17,5 +17,8 @@ that come installed by default in the BLAST AMI:
 
 This will discard the already downloaded BLAST databases and switch to the latest available BLAST databases from NCBI.
 
+An optional optimization step would be to [pre-cache the BLAST
+databases]({{site.baseurl}}{% post_url 2015-06-09-pre-cache-blastdbs %}).
+
 #### 2. Restart the instance
 [Stop]({{site.baseurl}}{% post_url 2015-06-09-stopping-instance %}) and [re-start]({{site.baseurl}}{% post_url 2015-06-09-starting-instance %}) the instance.

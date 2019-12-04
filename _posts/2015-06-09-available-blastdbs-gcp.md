@@ -2,7 +2,7 @@
 layout: page
 category: blastdb
 title: "Available BLAST databases in GCP"
-order: 0
+order: 6
 ---
 
 The following BLAST databases are available in Google Cloud Storage (GCS) (data as of December 6, 2018). You can obtain an updated list of BLAST databases by running `update_blastdb.pl --showall pretty --source gcp`.
