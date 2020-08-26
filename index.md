@@ -3,7 +3,7 @@ layout: page
 title: "NCBI BLAST Cloud Documentation"
 ---
 
-**The BLAST AMI has been deprecated and is no longer supported.  Please see our Cloud [documentation] (https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=CloudBlast) for other options.**
+**The BLAST AMI has been deprecated and is no longer supported.  Please see our Cloud [documentation](https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs&DOC_TYPE=CloudBlast) for other options.**
 
 
 
