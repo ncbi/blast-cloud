@@ -1,5 +1,5 @@
 # Site title and subtitle. This is used in _includes/header.html
-title: 'NCBI BLAST AMI'
+title: 'NCBI BLAST AMI (DEPRECATED)'
 subtitle: 'BLAST on the cloud'
 
 # Enable/show navigation. There are there options:
